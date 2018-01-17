@@ -90,7 +90,7 @@
                 let offset = $(this).offset();
                 let X = parseInt((e.pageX - offset.left));
                 let Y = parseInt((e.pageY - offset.top));
-                axios.delete('/elegir/'+X+'/'+Y).then(response =>{
+                axios.get('/elegir/'+X+'/'+Y).then(response =>{
                     vm.buscar=response.data;
                 }).catch(e => {
                     console.error(e);

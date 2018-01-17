@@ -21,7 +21,7 @@ Route::get('imagen3','SubirArchivo@imagen3')->name('imagen3');
 
 Route::get('elegir','SubirArchivo@elegir')->name('elegir');
 Route::post('elegir','SubirArchivo@procesarCambio');
-Route::delete('elegir/{x}/{y}','SubirArchivo@colorPix');
+Route::get('elegir/{x}/{y}','SubirArchivo@colorPix');
 
 Route::get('cambiar','SubirArchivo@cambiar')->name('cambiar');
 Route::post('cambiar','SubirArchivo@subirMontado');

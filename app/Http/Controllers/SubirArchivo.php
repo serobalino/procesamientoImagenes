@@ -34,7 +34,6 @@ class SubirArchivo extends Controller{
         if($existe){
             $archivo    =   Storage::disk('img')->get($nombre);
             return Image::make($archivo)->response();
-            exit;
         }else{
             return [false];
         }
