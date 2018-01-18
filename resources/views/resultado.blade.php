@@ -1,6 +1,6 @@
 @extends('plantilla')
 @section('cuerpo')
-    <div class="container" :style="'background-color: '+buscar">
+    <div class="container">
         <div class="jumbotron">
             <h1>Resultado</h1>
             <p>Procesamiento de Imágenes.</p>
@@ -15,6 +15,5 @@
             <h3>Montada</h3>
             <img src="{{$imagenes['3']}}" alt="" class="img-responsive img-thumbnail center-block"/>
         </div>
-
     </div>
 @endsection
